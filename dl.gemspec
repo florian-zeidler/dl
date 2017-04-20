@@ -12,13 +12,14 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Keep track of your achievements.}
   spec.description   = %q{This tool is for keeping log of you accomplishments, so you can refer to them easily for example when you do standup meetings, write a CV or a review for yourself.
 
-}
+  }
   spec.homepage      = "http://rubygems.org/gems/dl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables << 'dl'
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'thor', '~> 0.19.4'
