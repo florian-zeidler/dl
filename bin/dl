@@ -1,6 +1,16 @@
 #!/usr/bin/env ruby
 
+require 'thor'
 require 'dl'
 
-Dl.new.start(ARGV)
+class DlCli < Thor
+    desc "version","Print version"
+    def version
+      dl = Dl::DlCommands.new
+      puts dl.version
+    end
+  end
+
+
+DlCli.start(ARGV)
 
