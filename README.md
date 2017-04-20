@@ -1,5 +1,7 @@
 # Dl
 
+https://travis-ci.org/das-vinculum/dl.svg?branch=master
+
 This tool is for keeping log of you accomplishments, so you can refer to them easily for example when you do standup meetings, write a CV or a review for yourself.
 
 ## Installation

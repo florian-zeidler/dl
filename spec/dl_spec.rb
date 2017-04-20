@@ -5,4 +5,13 @@ describe Dl do
     expect(Dl::VERSION).not_to be nil
   end
 
+  it 'returns the correct configured version' do
+    expect(Dl::DlCommands.new.version).to be Dl::VERSION
+  end
+
+  it 'adds an entry to the log' do
+    dlCommands = Dl::DlCommands.new
+
+  end
+
 end

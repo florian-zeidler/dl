@@ -1,5 +1,14 @@
 require "dl/version"
 
 module Dl
-  # Your code goes here...
+
+  class DlCommands
+    def version
+      VERSION
+    end
+
+    def add(achievement)
+      achievement
+    end
+  end
 end
