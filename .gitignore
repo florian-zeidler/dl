@@ -7,3 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+/bin/*
+!/bin/dl
+!/bin/console
+!/bin/setup

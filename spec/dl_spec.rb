@@ -9,5 +9,9 @@ describe Dl do
     expect(Dl::DlCommands.new.version).to be Dl::VERSION
   end
 
+  it 'adds an entry to the log' do
+    dlCommands = Dl::DlCommands.new
+
+  end
 
 end
