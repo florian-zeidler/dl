@@ -1,5 +1,13 @@
 require "dl/version"
+require 'thor'
 
 module Dl
-  # Your code goes here...
+
+  class Dl < Thor
+    desc "dl version","Print version"
+    def self.version
+      puts VERSION
+    end
+  end
+
 end
