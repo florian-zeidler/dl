@@ -5,4 +5,9 @@ describe Dl do
     expect(Dl::VERSION).not_to be nil
   end
 
+  it 'returns the correct configured version' do
+    expect(Dl::DlCommands.new.version).to be Dl::VERSION
+  end
+
+
 end
